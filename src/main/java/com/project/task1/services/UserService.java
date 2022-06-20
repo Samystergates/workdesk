@@ -47,7 +47,6 @@ public class UserService {
 		// TODO Auto-generated method stub
 		Optional<User> u=userRepository.findById(email);
 		if(u.isPresent()) {
-			//User us = u.get();
 			return true;
 		}
 		return false;
